@@ -1,0 +1,545 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 58px;
+  color: rgb(228, 228, 228);
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  color: rgb(228, 228, 228);
+}
+
+.subtittleHero {
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: rgb(228, 228, 228);
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  color: rgb(228, 228, 228);
+}
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20;
+  color: rgb(228, 228, 228);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20;
+  color: rgb(228, 228, 228);
+}
+
+.contenedor {
+  padding: 60px 150px 50px 150px;
+}
+
+.barraNav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  padding-top: 20px;
+}
+
+.nav {
+  grid-column-start: 3;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 100px;
+  margin: 50px auto;
+}
+
+.navBoton {
+  color: rgb(228, 228, 228);
+  text-decoration: none;
+  align-self: center;
+}
+
+.logoFoxbox {
+  padding: 10px 10px 20px 150px;
+}
+
+.contenedorHeaderIndex {
+  background-image: url(../img/fondoHeaderindex.png);
+  width: 100%;
+}
+
+.bodyBoxIndex {
+  background-color: #080c16;
+  background-image: url(../img/fondoScimitar.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.bodyBoxNosotros {
+  background-color: #080c16;
+}
+
+.textoColor {
+  color: #ff6624;
+}
+
+.headerArticulo {
+  font-weight: 700;
+}
+
+.headerProductosTienda {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.fondoContacto {
+  background-image: url(../img/fondoContacto.png);
+  background-size: 100%;
+}
+
+.contenedorMain {
+  border-top: solid #ff6624;
+  text-align: center;
+}
+
+.contenedorTitle {
+  margin: 10px 0px 64px 0px;
+}
+
+.contenedorPromociones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 128px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 365px;
+  transition: all 0.3s;
+}
+
+.contenedorCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 16px 8px;
+  text-align: center;
+  background-image: url(../img/fondoCardPromo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.cardImg {
+  align-self: center;
+  width: auto;
+}
+
+.contenedorCardImg {
+  position: relative;
+  top: -60px;
+}
+
+contenedorTituloCard {
+  margin: 16px;
+  margin-bottom: 32px;
+}
+
+.tituloCard {
+  position: relative;
+  top: -30px;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 0.9;
+}
+
+.contenedorContenidoCard {
+  margin: 16px;
+}
+
+.contenidoCard {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.contenedorPrecio {
+  padding: 8px 43px 16px;
+  border-style: solid;
+  border-radius: 0px 0px 8px 7px;
+  border-color: #a83400;
+  text-align: center;
+}
+
+.precioCard {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff6624;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.precioCard:hover {
+  color: #c4c4c4;
+}
+
+.promocionScimitar {
+  width: fit-content;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+}
+
+.contenidoScimitar {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 100px;
+  margin-top: 62px;
+}
+
+.subtituloScimitar {
+  margin-top: 16px;
+  white-space: nowrap;
+}
+
+.botonScimitar {
+  margin: 32px 0px;
+}
+
+.videoScimitar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contenedorPagos {
+  background-color: #c4c4c4;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.contenidoLogosPagos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenidoPagos {
+  color: #030826;
+  font-weight: 700;
+}
+
+.contenedorFooter {
+  background-color: #080c16;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  border-top: solid #c4c4c4 2px;
+}
+
+.contenedorCopy {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.contenedorSm {
+  display: flex;
+  justify-content: space-evenly;
+  grid-column-start: 4;
+}
+
+.iconSm img {
+  size-adjust: 20px;
+  margin: 16px;
+}
+
+.contenedorHeaderNosotros {
+  background-image: url(../img/fondoHeadernosotros.png);
+  width: 100%;
+}
+
+.contenedorTextosHeader {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 32px 32px 0px;
+}
+
+.textosHeader {
+  margin-top: 64px;
+}
+
+.contenidoHeader {
+  margin-top: 32px;
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+.contenedorNosotros {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedorOfrecemos {
+  display: flex;
+  align-items: center;
+}
+
+.textosArticulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 32px;
+}
+
+.tituloArticulo {
+  margin: 32px;
+}
+
+.tituloArticulo h2 {
+  color: #ff6624;
+}
+
+.contenidoArticulo {
+  margin: 32px;
+  padding-top: 64px;
+  border-top: solid #ff6624;
+}
+
+.contenedorHeaderTienda {
+  background-image: url(../img/fondoHeadertienda.png);
+  height: auto;
+}
+
+.contenedorMenuFiltros {
+  margin: 16px;
+  padding: 32px;
+  border-bottom: solid #ff6624 2px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.filtro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.filtro:hover {
+  border: solid #c4c4c4;
+  border-radius: 7px;
+}
+
+.filtroMouse {
+  grid-area: 2/1/3/3;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filtroPantallas {
+  grid-area: 2/3/3/5;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filtroPc {
+  grid-area: 2/5/3/7;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filtroAuriculares {
+  grid-area: 2/7/3/9;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filtroTeclado {
+  grid-area: 3/1/4/3;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filtroSilla {
+  grid-area: 3/3/4/5;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filtroMousePad {
+  grid-area: 3/5/4/7;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filtroPortatil {
+  grid-area: 3/7/4/9;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.textFiltro {
+  margin-left: 32px;
+}
+
+.galeriaProductos {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.contenedorCardTienda {
+  min-height: 100%;
+  margin-top: 32px;
+  background: linear-gradient(
+    rgba(133, 40, 0, 0%),
+    rgba(133, 40, 0, 0%),
+    rgb(133, 40, 0)
+  );
+  border-radius: 7px;
+  padding: 0px 16px 16px;
+}
+
+.tituloCardTienda {
+  margin: 16px 8px 0px 8px;
+  padding-bottom: 0;
+}
+
+.headerCardTienda {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 0.9;
+}
+
+/* Blog */
+
+.contenedorBlog {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 149px;
+}
+
+.contenidoDestacado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contenedorDestacado {
+  border-bottom: solid #ff6624 2px;
+  width: 100%;
+}
+
+.articuloDestacado {
+  margin: 32px 0px;
+}
+
+.numeral {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.linea {
+  width: 90%;
+  border-top: solid #fff 1px;
+  margin: 8px 0 0 5%;
+  padding-top: 4px;
+}
+
+label {
+  color: rgb(228, 228, 228);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+/* Botones */
+
+.botonVinculoCorto {
+  background-color: #000a16; /* Black */
+  border-color: #ff6624;
+  border-radius: 35px;
+  color: white;
+  padding: 10px 120px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botonVinculoCorto:hover {
+  background-color: #ff6624;
+  color: #000a16;
+}
+
+.botonVinculoLargo {
+  background-color: #000a16; /* Black */
+  border-color: #ff6624;
+  border-radius: 35px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 124px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botonVinculoLargo:hover {
+  background-color: #ff6624;
+  color: #000a16;
+}
+
+.contenedorFormulario {
+  border-color: #ff6624;
+  border-radius: 7px;
+}
+
+.contenedorBotonTienda {
+  display: flex;
+  justify-content: center;
+}
