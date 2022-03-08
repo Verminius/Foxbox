@@ -606,8 +606,6 @@ legend {
 
 .message {
   grid-area: 2/2/4/3;
-  display: flex;
-  flex-direction: column;
 }
 
 .message label {
