@@ -38,7 +38,7 @@
                   <h5><a class="navBoton" href="blog.html">Blog</a></h5>
                 </li>
                 <li class="navItem">
-                  <h5><a class="navBoton" href="contacto.html">Contácto</a></h5>
+                  <h5><a class="navBoton active" href="contacto.html">Contácto</a></h5>
                 </li>
                 <li class="carritoDeCompras navItem">
                   <a class="navBoton" href=""></a>
@@ -53,8 +53,8 @@
         </header>
 
         <main class="contenedor">
-    <div class="contenedorHeaderContacto">
-      <h2 class="">ESCRÍBENOS</h2>
+    <div class="contenedorTituloContacto">
+      <h3 class="tituloContacto">ESCRÍBENOS</h3>
     </div>
 
     <form action="" class="">
@@ -63,6 +63,9 @@
           <h4>¿ESTÁS INTERESADO EN NUESTROS PRODUCTOS? ¿TIENES DUDAS O SUGERENCIAS? <br> ENVIANOS UN MENSAJE Y PRONTO NOS PONDREMOS EN CONTACTO.</h4>
         </legend>
 
+    <div class="formulario">
+
+      <div class="nombre"> 
         <label for="Nombre"> NOMBRE</label>
         <input class="labelBorder"
           required
@@ -71,31 +74,39 @@
           name="Nombre"
           id="nombre"
         />
+      </div>
 
-        <br>
-
+      <div class="email">
         <label for="email"> EMAIL</label>
         <input class="labelBorder"
           type="text"
-          placeholder="Escribe tu apellido"
-          name="apellido"
-          id="apellido"
+          placeholder="Escribe tu correo electrónico"
+          name="email"
+          id="email"
         />
+      </div>
 
-        <br>
-        <label>Acepto los terminos y condiciones</label>
+        
+
+      <div class="check">
         <input type="checkbox" name="acepta terminos" value="1" />
+        <label>Acepto los terminos y condiciones</label>
+      </div>
 
-       <div><h4>Eres</h4></div>
-        <div><h5>COMERCIANTE</h5></div>
-        <input class="radioBoton" type="radio" name="tipo de cliente" value="comerciante" />
+      <div class="radios">
+        <div><h4>ERES</h4></div>
+        <div class="opcionesRadio">
+          <input class="radioBoton" type="radio" name="tipo de cliente" value="comerciante" />
+          <div><h5>COMERCIANTE</h5></div>
 
-        <div><h5>GAMER</h5></div>
-        <input class="radioBoton" type="radio" name="tipo de cliente" value="gamer" />
-        <br />
-
-        <label for="mensaje">Mensaje</label>
-        <br />
+          <input class="radioBoton" type="radio" name="tipo de cliente" value="gamer" />
+          <div><h5>GAMER</h5></div>
+        </div>      
+        </div>  
+        
+      <div class="message">  
+        <label for="mensaje">MENSAJE</label>
+        
         <textarea class="labelBorder"
           name="mensaje"
           placeholder="Escribe aquí tu mensaje"
@@ -103,8 +114,10 @@
           cols="30"
           rows="10"
         ></textarea>
+      </div>
+    </div>
 
-        <div class="contenedorBoton">
+        <div class="contenedorBotonVinculo">
           <input class="botonVinculo" type="button" value="ENVIAR" />
         </div>
         

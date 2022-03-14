@@ -78,6 +78,22 @@ nav ul {
   align-self: center;
 }
 
+.navItem a {
+  color: #c4c4c4;
+}
+
+.navItem a:hover {
+  color: #a83400;
+}
+
+.navItem a:active {
+  color: #ff6624;
+}
+
+nav ul li .active {
+  color: #ff6624;
+}
+
 .logoFoxbox {
   padding: 10px 10px 20px 150px;
 }
@@ -159,7 +175,7 @@ nav ul {
   width: auto;
 }
 
-.contenedorCardImg {
+.contenedorCardImgIndex {
   position: relative;
   top: -60px;
 }
@@ -334,6 +350,8 @@ contenedorTituloCard {
   border-top: solid #ff6624;
 }
 
+/* Tienda */
+
 .contenedorHeaderTienda {
   background-image: url(../img/fondoHeadertienda.png);
   height: auto;
@@ -354,14 +372,16 @@ contenedorTituloCard {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  margin-top: 8px;
   padding: 20px;
+  border: solid rgba(133, 40, 0, 0%);
+  border-radius: 7px;
   transition: 0.3s;
   cursor: pointer;
-  position: relative;
 }
 
 .filtro:hover {
-  border: solid #c4c4c4;
+  border: solid #c4c4c4 1px;
   border-radius: 7px;
 }
 
@@ -434,7 +454,16 @@ contenedorTituloCard {
     rgb(133, 40, 0)
   );
   border-radius: 7px;
+
   padding: 0px 16px 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.contenedorCardTienda:hover {
+  border-radius: 7px;
+  border: solid 1px;
+  border-color: #a83400;
 }
 
 .tituloCardTienda {
@@ -453,7 +482,8 @@ contenedorTituloCard {
 .contenedorBlog {
   display: grid;
   grid-template-columns: 40% 60%;
-  gap: 149px;
+  gap: 128px;
+  width: auto;
 }
 
 .contenidoDestacado {
@@ -464,7 +494,7 @@ contenedorTituloCard {
 
 .contenedorDestacado {
   border-bottom: solid #ff6624 2px;
-  width: 100%;
+  padding-bottom: 32px;
 }
 
 .articuloDestacado {
@@ -476,6 +506,23 @@ contenedorTituloCard {
   font-weight: 700;
 }
 
+.articuloDelDia {
+  display: flex;
+  flex-direction: column;
+}
+
+.textoArticulo {
+  margin-bottom: 32px;
+}
+
+.tituloDelDia {
+  margin: 32px 0px 16px 0px;
+}
+
+.videoScimitarBlog {
+  width: auto;
+}
+
 .linea {
   width: 90%;
   border-top: solid #fff 1px;
@@ -483,10 +530,111 @@ contenedorTituloCard {
   padding-top: 4px;
 }
 
+/*Contacto*/
+
+.contenedorTituloContacto {
+  margin: 16px 0px;
+}
+
+.tituloContacto {
+  font-weight: 700;
+}
+
+.contenedorFormulario {
+  border-color: #ff6624;
+  border-radius: 7px;
+  padding: 32px;
+  position: relative;
+  margin-bottom: 64px;
+}
+
+legend {
+  margin: 8px;
+  padding: 8px;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.nombre {
+  grid-area: 1/1/2/2;
+  display: flex;
+  flex-direction: column;
+}
+
+.nombre label {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.nombre input {
+  font-size: 16px;
+}
+
+.email {
+  grid-area: 2/1/3/2;
+  display: flex;
+  flex-direction: column;
+}
+
+.email label {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.email input {
+  font-size: 16px;
+}
+
+.check {
+  grid-area: 3/1/4/2;
+}
+
+.radios {
+  grid-area: 1/2/2/3;
+}
+
+.opcionesRadio {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.message {
+  grid-area: 2/2/4/3;
+  display: flex;
+  flex-direction: column;
+}
+
+.message label {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
 label {
   color: rgb(228, 228, 228);
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.labelBorder {
+  color: #c4c4c4;
+  border-color: #a83400;
+  border-style: solid 1px;
+  background-color: #000a16;
+  border-radius: 7px;
+  padding: 4px 32px 4px 4px;
 }
 
 /* Botones */
@@ -512,6 +660,35 @@ label {
   color: #000a16;
 }
 
+.botonVinculo {
+  background-color: #000a16; /* Black */
+  border-color: #ff6624;
+  border-radius: 35px;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  position: absolute;
+  align-items: flex-end;
+}
+
+.botonVinculo:hover {
+  background-color: #ff6624;
+  color: #000a16;
+}
+
+.contenedorBotonVinculo {
+  display: flex;
+  justify-content: end;
+  margin-top: 16px;
+}
+
 .botonVinculoLargo {
   background-color: #000a16; /* Black */
   border-color: #ff6624;
@@ -532,11 +709,6 @@ label {
 .botonVinculoLargo:hover {
   background-color: #ff6624;
   color: #000a16;
-}
-
-.contenedorFormulario {
-  border-color: #ff6624;
-  border-radius: 7px;
 }
 
 .contenedorBotonTienda {
