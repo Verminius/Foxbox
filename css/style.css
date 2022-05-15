@@ -352,9 +352,14 @@ contenedorTituloCard {
 
 /* Tienda */
 
+.navBg {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .contenedorHeaderTienda {
   background-image: url(../img/fondoHeadertienda.png);
   height: auto;
+  width: auto;
 }
 
 .contenedorMenuFiltros {
